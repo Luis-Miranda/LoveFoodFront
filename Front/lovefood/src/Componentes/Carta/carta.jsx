@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './carta.css';
 
 export class FoodCardOrder extends Component{
 
@@ -44,7 +45,7 @@ export class FoodCardOrder extends Component{
 
     render(){
         return (
-            <div>
+            <div className='card-container'>
                 {
                     this.renderCarta()
                 }
