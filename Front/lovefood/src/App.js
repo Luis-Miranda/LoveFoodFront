@@ -9,7 +9,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Navbar from './Componentes/Navbar/navbar'
 import Platillos from './Componentes/Platillos/platillos'
 import UploadFood from './Componentes/UploadFood/upload'
-import Carta from './Componentes/Carta/carta'
+import Carta2 from './Componentes/Carta2/carta2'
 import Carrito from './Componentes/Delivery/delivery'
 import Login from './Componentes/LogIn/log2'
 import './App.css';
@@ -26,7 +26,7 @@ function App() {
 
               <Route exact path='/Platillos' component={Platillos}/>
 
-              <Route exact path='/Order' component={Carta}/>
+              <Route exact path='/Order' component={Carta2}/>
 
               <Route exact path='/Carrito' component={Carrito}/>
             </main>

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './platillos.css'
+import './carta2.css'
 
-export class FoodCard extends Component{
+export class FoodCardOrder extends Component{
 
     state = {
         platillos:[],
@@ -42,15 +42,15 @@ export class FoodCard extends Component{
         return this.state.platillos.map(platillo => {
             if(platillo.platillo.toLowerCase().startsWith(this.state.searchValue)){
                 return (
-                    <div className="card">
-                        <img src={platillo.img_platillo} style={{width: '15rem'}} className="card-img-top" alt="Platillo Recomendado"/>
+                    <div className="card" >
+                        <img src={platillo.img_platillo} style={{width: '15rem'}} className="imgprro card-img-top" alt="Platillo Recomendado"/>
                         <div className="card-body">
                             <h5 className="card-title">{platillo.platillo}</h5>
                             <p className="card-text">{platillo.picante}</p>
                             <img className="logoRest" src={platillo.restaurante} alt="restaurante"/>
                             <p className="card-text">{platillo.ingredientes}</p>
                             <p className="card-text">{platillo.descripcion}</p>
-                            <button type="button" className="btn btn-danger" onClick={()=>this.borrarPlatillo(platillo._id)}>Borrar</button>
+                            <button type="button" className="btn btn-success" onClick={()=>this.mandarCarrito(platillo._id)}>Ordenar</button>
                         </div>
                     </div>
                 )
@@ -74,4 +74,4 @@ export class FoodCard extends Component{
     }
 }
 
-export default FoodCard
+export default FoodCardOrder

@@ -1,0 +1,174 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .barra{
+      position: fixed;
+      justify-content: flex-end;
+  }
+  
+.registro{
+    position: fixed;
+    display: flex;
+    align-content: space-around;
+}
+
+.login{
+    position: fixed;
+    display: flex;
+    align-content: space-around;
+}
+
+.contentContainer {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 285px;
+    margin-top: 10px;
+}
+
+#face{
+    margin-bottom: 20px;
+}
+
+  .titulo{
+justify-content: flex-start;
+margin-bottom: 30px;
+  }
+
+
+  .content {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 350px;
+    height: 480px;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+
+  .username{
+      /* border: solid 2px black; */
+      display: flex;
+    align-content: space-around;
+  }
+
+
+.contrasena{
+   /*  border: solid 2px black; */
+   margin-top: 15px;
+}
+
+.telefono{
+    margin-top: 15px;
+}
+
+.direccion{
+   /*  border: solid 2px black; */
+   margin-top: 15px;
+}
+  
+.btn{
+margin-top: 10px;
+
+}
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .noV{
+      display: none;
+  }
+
+  #Nav{
+      position: fixed;
+      width: 100vw;
+      display: flex;
+      justify-content: flex-end;
+  }
+
+
+  #patern{
+      background-image: url(./fondo.png);
+      
+  }
+
+ 
+
+  .PP{
+    
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Red Hat Display', sans-serif;
+    color: rgb(255, 255, 255);
+  }
+
+  .profile{
+      width: 90px;
+      align-content: flex-end;
+  }
+h2{
+display: flex;
+align-items: space-around;
+}
+  .pn{
+    font-family: 'Red Hat Display', sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+  }
+
+.c1 {
+    display: flex;
+    margin-top: 120px;
+    /* justify-content: space-around; */
+}
+
+.c2{
+    display: flex;
+    margin-top: 60px;
+    /* justify-content: space-around; */
+}
+
+.c3{
+    display: flex;
+    margin-top: 60px;
+    /* justify-content: space-around; */
+}
+
+.c4{
+    display: flex;
+    margin-top: 60px;
+}
+
+.tp{
+    font-family: 'Red Hat Display', sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 15px;
+}

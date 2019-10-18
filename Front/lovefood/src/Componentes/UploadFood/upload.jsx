@@ -19,7 +19,7 @@ export class FoodUploader  extends Component {
     onSubmitForm = (e) => {
         e.preventDefault();
         axios.post('https://tamales-server.herokuapp.com/create/food',this.state)
-        .then(res => alert('Platillo añadido'))
+        .then(response => alert('Platillo añadido'))
         .catch(error => console.log(error))
     }
 
@@ -52,11 +52,11 @@ export class FoodUploader  extends Component {
                     <div className="form-group">
                         <label for="formGroupExampleInput2">picante</label>
                     <select className="form-control" id="picante" onChange={this.onInputChange} value={this.state.picante}>
-                        <option>Nada Picoso</option>
-                        <option>Poco Picoso</option>
-                        <option>Medio Picoso</option>
-                        <option>Picoso</option>
-                        <option>Muy Picoso</option>
+                        <option>Nada</option>
+                        <option>Poco</option>
+                        <option>Medio</option>
+                        <option>Picante</option>
+                        <option>Muy Picante</option>
                     </select>
                     </div>
                     <div className="form-group">
@@ -75,7 +75,7 @@ export class FoodUploader  extends Component {
                     </div>
                     <div className="form-group">
                         <label for="formGroupExampleInput2">img_platillo</label>
-                        <input type="text" class="form-control" id="img_platillo"
+                        <input type="text" class="form-control" id="imgPlatillo"
                         onChange={this.onInputChange}
                         value={this.state.imgPlatillo}
                         />

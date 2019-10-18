@@ -38,11 +38,7 @@ export class Navbar extends Component {
                                 </div>
                             </li>
                         </ul>
-                        <form className="form-inline my-2 my-lg-0">
-                            <input className="form-control mr-sm-2" type="search" placeholder="¿Cúal es tu antojo?" aria-label="Search"/>
-                                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                                
-    </form>
+                        
   </div>
 </nav>
                

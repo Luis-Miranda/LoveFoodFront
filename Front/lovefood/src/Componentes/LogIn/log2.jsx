@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+/* import './log2.css'
+import logo from '' */
 
 export class log2 extends Component {
     render() {
